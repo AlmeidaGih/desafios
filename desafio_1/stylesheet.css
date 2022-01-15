@@ -4,8 +4,7 @@ h1{
 }
 
 body{
-	background-color: #040327;
-	margin-left: 8%;
+	background-image: linear-gradient(to bottom,#040327, black);
 	color: white;
 	font-family: Heebo;
 }
@@ -14,6 +13,7 @@ body{
 	width: 201px;
 	height: 30px;
 	margin-top: 2%;
+	margin-left: 8%;
 }
 
 #peopleAndPlanet{
@@ -25,6 +25,7 @@ body{
 #mainInfo{
 	margin-top: 5%;
 	width: 55%;
+	margin-left: 8%;
 }
 
 #mainInfo h4{
@@ -88,11 +89,28 @@ body{
 
 section{
 	margin-top: 10%;
+	margin-left: 8%;
 }
 
-.icons{
+.iconRocket{
 	display: inline-block;
-	text-align: center;
+	text-align: left;
+	width: 20%;
+}
+
+.iconLand{
+	display: inline-block;
+	text-align: left;
+	width: 20%;
+	margin-left: 20%;
+	margin-right: 23%;
+}
+
+.iconTelescope{
+	display: inline-block;
+	text-align: left;
+	width: 12%;
+
 }
 
 .sectionIcons{
@@ -110,4 +128,38 @@ section{
 	line-height: 24px;
 	letter-spacing: 1px;
 }
+
+.stars1{
+	background-image: url('imagens/stars.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-top: 3%;
+	position: relative;
+}
+
+.lines{
+	position: relative;
+}
+
+.mars{
+	position: absolute;
+	left: 70px;
+	
+}
+
+.stars1 h4{
+	float: right;
+	color: #F5D15F;
+	letter-spacing: 5px;
+	font-weight: 500;
+	font-size: 18px;
+	font-style: normal;
+	line-height: 27px;
+	text-transform: uppercase;
+	margin-right: 30%;
+	margin-top: 10%;
+}
+
+
 
