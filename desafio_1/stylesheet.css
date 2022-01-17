@@ -157,9 +157,234 @@ section{
 	font-style: normal;
 	line-height: 27px;
 	text-transform: uppercase;
-	margin-right: 30%;
-	margin-top: 10%;
+	position: absolute;
+	top: 7%;
+	left: 55%;
+
 }
+
+.stars1 h1{
+	float: right;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 32px;
+	font-style: normal;
+	line-height: 47px;
+	position: absolute;
+	top: 10%;
+	left: 55%;
+
+}
+
+.stars1 p{
+	color: #D5D5DB;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-size: 16px;
+	font-style: normal;
+	line-height: 24px;
+	position: absolute;
+	top: 17%;
+	left: 55%;
+}
+
+.secondLogo{
+	position: absolute;
+	top: 65%;
+	left: 10%;
+}
+
+#secondH1{
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 32px;
+	font-style: normal;
+	line-height: 48px;
+	position: absolute;
+	top: 66%;
+	left: 10%;
+}
+
+.stars1 h6{
+	color: #FF8C70;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 18px;
+	font-style: normal;
+	line-height: 26px;
+	position: absolute;
+	top: 79%;
+	left: 10%;
+}
+
+.stars2{
+	background-image: url('imagens/stars2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-top: 10%;
+	position: relative;
+}
+
+.form{
+	background-color: #0E0D40;
+	margin-left: 10%;
+	width: 520px;
+	height: 830px;
+	float: left;
+	border-radius: 25px;
+	
+}
+
+.formIcon{
+	margin-top: 10%;
+	margin-left: 10%;
+}
+
+
+form h2{
+	letter-spacing: 1px;
+	font-weight: 500;
+	font-size: 24px;
+	font-style: normal;
+	line-height: 32px;
+	margin-left: 10%;
+}
+
+form h3{
+	color: rgba(255, 255, 255, 0.7);
+	font-weight: 500;
+	font-size: 16px;
+	font-style: normal;
+	line-height: 20px;
+	margin-left: 10%;
+}
+
+.labels{
+	margin-left: 10%;
+}
+
+#name{
+	background-color: #0E0D40;
+	border-width: 1px;
+	border-color: #FFFFFF;
+	border-radius: 8px;
+	margin-left: 10%;
+	margin-top: 2%;
+	width: 416px;
+	height: 56px;
+	margin-bottom: 4%;
+}
+
+#email{
+	background-color: #0E0D40;
+	border-width: 1px;
+	border-color: #FFFFFF;
+	border-radius: 8px;
+	margin-left: 10%;
+	margin-top: 2%;
+	width: 416px;
+	height: 56px;
+	margin-bottom: 4%;
+}
+
+#phone{
+	background-color: #0E0D40;
+	border-width: 1px;
+	border-color: #FFFFFF;
+	border-radius: 8px;
+	margin-left: 10%;
+	margin-top: 2%;
+	width: 416px;
+	height: 56px;
+	margin-bottom: 4%;
+}
+
+#agreement{
+	background-color: #0E0D40;
+	border-width: 1px;
+	border-color: #FFFFFF;
+	border-radius: 8px;
+	margin-left: 10%;
+	margin-top: 2%;
+	width: 24px;
+	height: 24px;
+	margin-bottom: 4%;
+}
+
+label[for=agreement]{
+	color: #D5D5DB ;
+	font-size: 16px;
+	line-height: 23px;
+	text-align: center;
+}
+
+#submitForm{
+	text-align: center;
+	margin-left: 10%;
+	margin-top: 5%;
+	width: 416px;
+	height: 65px;
+	background: #E85937;
+	border-radius: 6px;
+	border-color: #E85937;
+	color: #FFFFFF;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 26px;
+	-webkit-transition: background-color 1s ease-out;
+  	-moz-transition: background-color 1s ease-out;
+  	-o-transition: background-color 1s ease-out;
+  	transition: background-color 1s ease-out;
+
+}
+
+#submitForm:hover{
+	color: #000000;
+	background: #CF3F1D;
+	border-color: #CF3F1D;
+	box-shadow: 0px 8px 10px rgba(255, 140, 112, 0.3);
+	cursor: pointer;
+}
+
+.rocket{
+	float: right;
+}
+
+.smoke{
+	width: 100%;
+}
+
+.footerLogo{
+	margin-left: 10%;
+	margin-top: 5%;
+}
+
+.instaLogo{
+	margin-left: 15%;
+
+}
+
+.linkedLogo{
+	margin-left: 1%;
+}
+
+.faceLogo{
+	margin-left: 1%;
+	margin-right: 14%;
+}
+
+footer h6{
+	font-family: Inter !important;
+	font-weight: 500;
+	font-size: 16px;
+	font-style: normal;
+	line-height: 20px;
+	display: inline-block;
+	padding: 2%;
+}
+
 
 
 
