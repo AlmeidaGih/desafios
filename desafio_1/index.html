@@ -6,6 +6,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Heebo" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+	<script src="https://kit.fontawesome.com/ca14b9e588.js" crossorigin="anonymous"></script>
 	<title>SpaceY</title>
 </head>
 <body>
@@ -48,10 +49,30 @@
 				<p>A uma distância média de 140 milhões de milhas, Marte é um dos vizinhos habitáveis ​​mais próximos da Terra. Marte está mais ou menos a metade da distância da Terra do Sol, então ainda tem luz solar decente. Está um pouco frio, mas podemos esquentar. Sua atmosfera é composta principalmente de CO2 com um pouco de nitrogênio e argônio e alguns outros oligoelementos, o que significa que podemos cultivar plantas em Marte apenas comprimindo a atmosfera.
 				<br><br>A gravidade em Marte é cerca de 38% da da Terra, então você seria capaz de levantar coisas pesadas e dar voltas. Além disso, o dia está notavelmente próximo ao da Terra.</p>	
 			</div>
-			<div>
+			<div class="beforeSlide">
 				<img src="imagens/logo2.png" class="secondLogo">
 				<h1 id="secondH1" class="yellowDot">O caminho para <br> tornar a humanidade <br> multiplanetária</h1>
 				<h6>Inscreva-se agora</h6>
+			</div>
+			<div class="slideShow">
+				<div class="slides">
+					
+					<div id="back" class="btn">
+						<i class="fas fa-chevron-left"></i>
+					</div>
+					<div id="next" class="btn">
+						<i class="fas fa-chevron-right"></i>
+					</div>
+
+					<div id="current" class="images">
+						<img src="imagens/slide1.png">
+					</div>
+					<div class="images">
+						<img src="imagens/slide2.png">
+					</div>
+				</div>
+				<div class="balls">
+				</div>
 			</div>
 		</div>
 		<div class="stars2">
@@ -91,4 +112,52 @@
 
 	</footer>
 </body>
+<script type="text/javascript">
+	var balls = document.querySelector('.balls')
+	var quant = document.querySelectorAll('.slides .images')
+	var current = 0
+	var image = document.getElementById('current')
+	var next = document.getElementById('next')
+	var back = document.getElementById('back')
+
+	for(let i=0; i< quant.length; i++){
+		var div = document.createElement('div')
+		div.id = i
+		balls.appendChild(div)
+	}
+
+	document.getElementById('0').classList.add('imgCurrent')
+
+	var pos = document.querySelectorAll('.balls div')
+
+	for(let i=0; i< pos.length; i++){
+		pos[i].addEventListener('click', ()=>{
+			atual = pos[i].id 
+			slide()
+		})
+	}
+
+	back.addEventListener('click', ()=>{
+		current--
+		slide()
+	})
+
+	next.addEventListener('click', ()=>{
+		current++
+		slide()
+	})
+
+	function slide(){
+		if(current >= quant.length){
+			atual = 0
+		}
+		else if(current < 0){
+			current = quant.length -1
+		}
+
+		document.querySelector('.imgCurrent').classList.remove('imgCurrent')
+		image.style.marginLeft = -345*current+'px'
+		document.getElementById(current).classList.add('imgCurrent')
+	}
+</script>
 </html>
