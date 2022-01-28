@@ -1,0 +1,73 @@
+@import "../../../scss/globalUse.scss";
+
+:host{
+    height: 60px;
+    display: block;
+    border-bottom: 1px solid $light_grey;
+    h4{
+        font-family: $poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    nav{
+      float: left;
+    }
+
+    nav h4{
+        padding: 20px 0px 0px 35px;
+        display: inline-block;
+        color: $grey_text; 
+    }
+
+    div{
+        display: inline-block;
+    }
+
+    div hr{
+        transform: rotate(90deg);
+        width: 25px;
+        position: relative;
+        top: 30px;
+        left: 30px;
+        border: 1px solid $light_grey;
+    }
+
+    .searchIcon{
+        position: relative;
+        top: 18px;
+        left: 90px;
+    }
+
+    div h4{
+        color: black;
+        position: relative;
+        top: -10px;
+        left: 630px;
+    }
+
+    .personPhoto{
+        background-image: url('../../../../assets/images/davi.png');
+        background-size: contain;
+        border-radius: 15px;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: -50px;
+        left: 740px;
+    }
+
+    .arrowIcon{
+        position: relative;
+        top: -67px;
+        left: 760px;
+    }
+
+    .moonIcon{
+        position: relative;
+        top: -65px;
+        left: 788px;
+    }
+
+}
