@@ -1,6 +1,5 @@
 body{
    background-color: rgb(244, 222, 254);
-   
 }
 
 .calculator{
@@ -19,16 +18,16 @@ body{
     width: calc(100% - 30px);
     margin-top: 15px;
     margin-left: 15px;
-    height: 100px;
+    height: 140px;
     border-radius: 25px;
     background-color: white;
     box-shadow: 2px 2px 2px 4px #e4e3e3 inset;
     text-align: center;
 }
 
-input{
+.calculator__computation{
     width: 95%;
-    height: 85%;
+    height: 30%;
     margin-top: 5px;
     border-radius: 25px;
     border: none;
@@ -36,36 +35,48 @@ input{
     text-align: right; 
 }
 
-input:focus{
+.calculator__computation:focus{
     outline: none;
 }
 
-.calculator__buttons{
+.calculator__total{
+    width: 95%;
+    height: 30%;
+    margin-top: 45px;
+    border-radius: 25px;
+    border: none;
+    font-size: 30px;
+    text-align: right; 
+}
+
+.calculator__total:focus{
+    outline: none;
+}
+
+.calculator__numbers{
     width: calc(100% - 30px);
-    height: calc(100% - 150px);
+    height: calc(100% - 180px);
     margin-top: 15px;
     margin-left: 15px;
     
 }
 
-table{
+.calculator__table{
     width: 100%;
     height: 100%;
 }
 
-tr{
+.calculator__tr{
     width: 100%;
     height: 20%;
 }
 
-.tdMod{
+.calculator__td{
     width: 25%;
     text-align: center;    
 }
 
-
-
-button{
+.calculator__button{
     width: 70%;
     height: 90%;
     background-color: white;
@@ -76,20 +87,26 @@ button{
     font-family: Arial;
 }
 
-
-.calculator__buttons--style{
-    width: 10px;
-    height: 10px;
-    border: none;
-    border-radius: 50px;
-    background-color: white;
-    box-shadow: 2px 2px 2px 4px #e4e3e3 inset;
-    font-family: Arial;
-}
-
 .calculator__buttons--erase{
     
     background-image: url(../images/icons8-limpar-símbolo-50.png);
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.calculator__buttons--operations{
+    color: #855ff5;
+}
+
+.calculator__buttons--equal{
+    color: white;
+    background-color: #4c11ee;
+    width: 70%;
+    height: 90%;
+    border: none;
+    border-radius: 50px;
+    font-size: 25px;
+    font-family: Arial;
+}
+
+

@@ -11,72 +11,73 @@
 <body>
     <div class="calculator">
         <div class="calculator__result">
-            <input type="text">
+            <input type="text" class="calculator__computation">
+            <input type="text" class="calculator__total">
         </div>
-        <div class="calculator__buttons">
-            <table>
-                <tr>
-                    <td class="tdMod">
-                        <button >AC</button>
+        <div class="calculator__numbers">
+            <table class="calculator__table">
+                <tr class="calculator__tr">
+                    <td class="calculator__td">
+                        <button class="calculator__button calculator__buttons--operations" >AC</button>
                     </td>
-                    <td class="tdMod">
-                        <button >/</button>
+                    <td class="calculator__td">
+                        <button class="calculator__button calculator__buttons--operations">/</button>
                     </td>
-                    <td class="tdMod">
-                        <button >X</button>
+                    <td class="calculator__td">
+                        <button class="calculator__button calculator__buttons--operations" >X</button>
                     </td>
-                    <td class="tdMod"> 
-                        <button ></button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="tdMod">
-                        <button >7</button>
-                    </td>
-                    <td class="tdMod">
-                        <button >8</button>
-                    </td>
-                    <td class="tdMod">
-                        <button >9</button>
-                    </td>
-                    <td class="tdMod">
-                        <button >-</button>
+                    <td class="calculator__td"> 
+                        <button class="calculator__button calculator__buttons--erase"></button>
                     </td>
                 </tr>
                 <tr>
-                    <td class="tdMod">
-                        <button>4</button>
+                    <td class="calculator__td">
+                        <button class="calculator__button">7</button>
                     </td>
-                    <td class="tdMod">
-                        <button >5</button>
+                    <td class="calculator__td">
+                        <button class="calculator__button">8</button>
                     </td>
-                    <td class="tdMod">
-                        <button >6</button>
+                    <td class="calculator__td">
+                        <button class="calculator__button">9</button>
                     </td>
-                    <td class="tdMod">
-                        <button>+</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="tdMod"> 
-                        <button >1</button>
-                    </td>
-                    <td class="tdMod">
-                        <button >2</button>
-                    </td>
-                    <td class="tdMod">
-                        <button >3</button>
-                    </td>
-                    <td class="tdMod">
-                        <button >=</button>
+                    <td class="calculator__td">
+                        <button class="calculator__button calculator__buttons--operations">-</button>
                     </td>
                 </tr>
                 <tr>
-                    <td class="tdMod">
-                        <button  >0</button>
+                    <td class="calculator__td">
+                        <button class="calculator__button">4</button>
                     </td>
-                    <td class="tdMod">
-                        <button >,</button>
+                    <td class="calculator__td">
+                        <button class="calculator__button">5</button>
+                    </td>
+                    <td class="calculator__td">
+                        <button class="calculator__button">6</button>
+                    </td>
+                    <td class="calculator__td">
+                        <button class="calculator__button calculator__buttons--operations">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="calculator__td"> 
+                        <button class="calculator__button">1</button>
+                    </td>
+                    <td class="calculator__td">
+                        <button class="calculator__button">2</button>
+                    </td>
+                    <td class="calculator__td">
+                        <button class="calculator__button">3</button>
+                    </td>
+                    <td class="calculator__td">
+                        <button class=" calculator__buttons--equal">=</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="calculator__td">
+                        <button  class="calculator__button">0</button>
+                    </td>
+                    <td class="calculator__td">
+                        <button class="calculator__button">,</button>
                     </td>
                 </tr>
             </table>
